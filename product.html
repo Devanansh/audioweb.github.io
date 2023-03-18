@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>WebPage</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+</head>
+<body>
+
+
+
+
+
+
+
+
+    <!-- Navigation Bar -->
+
+
+
+
+
+
+
+    <nav>
+        <div class="menu">
+            <ul>
+                <li><a href="#" class="logo">WP</a></li>
+                <li><a href="indx.html" class="menu-item">Home</a></li>
+                <li><a href="product.html" class="menu-item">products</a></li>
+                <li><a href="#" class="menu-item">watches</a></li>
+                <li><a href="#" class="menu-item">TVs</a></li>
+                <li><a href="#" class="menu-item">appliances</a></li>
+                <li><a href="#" class="menu-item">support</a></li>
+                <li><a href="#" id="search"><i class="fas fa-search"></i></a></li>
+                <li><a href="#" id=""><i class="fas fa-shopping-basket"></i></a></li>
+            </ul>
+            <div class="search-form">
+                <form>
+                    <input type="text" name="" placeholder="products here">
+                </form>
+            </div>
+            <a class="close"><i class="fa fa-times"></i></a>
+        </div>
+    </nav>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+  integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+        $('#search').click(function(){
+            $('.menu-item').addClass('hide-item')
+            $('.search-form').addClass('active')
+            $('.close').addClass('active')
+            $('#search').hide()
+        })
+        $('.close').click(function(){
+            $('.menu-item').removeClass('hide-item')
+            $('.search-form').removeClass('active')
+            $('.close').removeClass('active')
+            $('#search').show()
+        })
+    })
+  </script>
+
+
+
+
+
+<!--  Product Banner -->
+
+
+
+    <h4>hey there it is product page</h4>
+
+    <audio  controls autoplay loop>
+        <source src="yt1s.com - Get Set Fly Science Original Background Music Copyright Free Music.mp3">
+
+    </audio>
+
+
+  
+</body>
+</html>
